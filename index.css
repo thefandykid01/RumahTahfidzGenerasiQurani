@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: azure;
+}
+
+.logo, .title-1, .title-2{
+    display: flex;
+    margin: 10px;
+    text-align: center;
+}
+
+.group-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.admin-btn{
+    width: 100px;
+    height: 30px;
+    color: azure;
+    background-color: navy;
+    outline: none;
+    border: 1px solid navy;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ustadz-btn{
+    width: 100px;
+    height: 30px;
+    color: azure;
+    background-color: tomato;
+    outline: none;
+    border: 1px solid tomato;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.santri-btn{
+    width: 100px;
+    height: 30px;
+    color: azure;
+    background-color: teal;
+    outline: none;
+    border: 1px solid teal;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.group-btn a{
+    text-decoration: none;
+    color: azure;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .group-btn{
+        flex-direction: column;
+    }
+
+    .admin-btn, .ustadz-btn, .santri-btn{
+        width: 150px;
+        height: 40px;
+    }
+
+}

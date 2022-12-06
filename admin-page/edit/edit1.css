@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: azure;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 2px solid navy;
+}
+
+.header img{
+    width: 100%;
+    height: 50px;
+}
+
+.tag-username{
+    padding: 10px;
+    border: 1px solid navy;
+    border-radius: 5px;
+    color: navy;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tag-username:hover{
+    color: azure;
+    background-color: navy;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+}
+
+.left-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 15%;  
+    background-color: navy;
+}
+
+.above-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+}
+
+.below-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.above-menu a, .below-menu a{
+    text-decoration: none;
+    color: azure;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.right-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 85%;
+    background-color: azure;
+    padding: 5px;
+}
+
+.title-menu{
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.sub-right-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
+    height: 92%;
+}
+
+.left-box{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid navy;
+    padding: 10px;
+}
+
+.card-1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-1 div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 8px;
+}
+
+.card-1 div label{
+    display: flex;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 1px;
+    color: gray;
+    font-size: 10px;
+}
+
+.card-1 div input{
+    display: flex;
+    width: 400px;
+    height: 38px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    border: 1px solid gray;
+}
+
+.card-1 div select{
+    display: flex;
+    width: 400px;
+    height: 38px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    border: 1px solid gray;
+}
+
+.card-1 div textarea{
+    display: flex;
+    width: 400px;
+    height: 40px;
+    resize: vertical;
+    padding-left: 10px;
+    padding-top: 15px;
+    outline: none;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.card-1 .save-btn button{
+    display: flex;
+    width: 400px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    cursor: pointer;
+    background-color: navy;
+    color: azure;
+    border: 1px solid navy;
+    border-radius: 5px;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    .container{
+        height: auto;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+    
+    .logo img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 70px;
+    }
+
+    .tag-username{
+        margin: 5px 0 10px 0;
+    }
+
+    .content{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .above-menu{
+        align-items: center;
+        gap: 20px;
+    }
+
+    .below-menu{
+        align-items: center;
+        border-top: 2px solid slategrey;
+    }
+    
+}

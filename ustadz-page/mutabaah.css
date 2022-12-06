@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: azure;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 2px solid tomato;
+}
+
+.header img{
+    width: 100%;
+    height: 50px;
+}
+
+.tag-username{
+    padding: 10px;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    color: tomato;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tag-username:hover{
+    color: azure;
+    background-color: tomato;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+}
+
+.left-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 15%;  
+    background-color: tomato;
+}
+
+.above-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.below-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.above-menu a, .below-menu a{
+    text-decoration: none;
+    color: azure;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.right-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 85%;
+    background-color: azure;
+    padding: 5px;
+}
+
+.title-menu{
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.sub-right-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
+}
+
+.left-box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid tomato;
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+}
+
+.sub-title-menu{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.selectsantri select{
+    width: 30%;
+    height: 30px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.tabelmutabaah{
+    height: 200px;
+    overflow: auto;
+    border: 1px solid tomato;
+    margin-bottom: 10px;
+}
+
+table, th, td{
+    border: 1px solid gray;
+    text-align: center;
+}
+
+th{
+    background-color: tomato;
+    height: 30px;
+    color: azure;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+table{
+    width: 100%;
+}
+
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.part-one input{
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+    outline: none;
+}
+
+.part-two{
+    display: flex;
+    flex-direction: column;
+}
+
+.part-two label, .part-three label{
+    display: flex;
+    position: absolute;
+    padding-left: 5px;
+    color: darkgray;
+}
+
+.part-two input{
+    width: 150px;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    outline: none;
+}
+
+.part-three textarea{
+    outline: none;
+    resize: none;
+    padding: 5px;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-top: 15px;
+}
+
+.part-four select{
+    width: 150px;
+    height: 40px;
+    outline: none;
+    font-size: 12px;
+}
+
+.section-2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.section-2 div input{
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+    font-size: 12px;
+}
+
+.sub-hbs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .container{
+        height: auto;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+    
+    .logo img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 70px;
+    }
+
+    .tag-username{
+        margin: 5px 0 10px 0;
+    }
+
+    .content{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .above-menu{
+        align-items: center;
+        gap: 20px;
+    }
+
+    .below-menu{
+        align-items: center;
+        border-top: 2px solid slategrey;
+    }
+
+    .sub-right-content{
+        flex-direction: column;
+        height: 50%;
+    }
+
+    .sub-hbs{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    /* .tabelmutabaah{
+        overflow: unset;
+    } */
+
+    .section{
+        flex-direction: column;
+    }
+
+    .part-one input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .part-two input{
+        width: 100%;
+    }
+
+    .part-three textarea{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .part-four select{
+        width: 100%;
+    }
+
+    .left-box{
+        height: auto;
+    }
+
+    
+}
